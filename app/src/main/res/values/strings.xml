@@ -3,4 +3,5 @@
     <string name="escolha_um_numero">Escolha um número de 0 a 10</string>
     <string name="rodar">Rodar</string>
     <string name="numero_sorteado_e">Número sorteado é :</string>
+    <string name="digite_numero_de_0_a_10">Digite um número de 0 a 10</string>
 </resources>
