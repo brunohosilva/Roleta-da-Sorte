@@ -13,15 +13,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         
         // Declarado variavel para resgatar o objeto do botão na view     
-        val btn_rodar_roleta = findViewById(R.id.btn_rodar) as Button
+        val btnRodarRoleta = findViewById<Button>(R.id.btn_rodar)
         
         // Acessa a propriedade on click do botão
         // onde é chadado o metodo Radom de o a 10
         // e mostrado ao usuário na tela
-        btn_rodar_roleta.setOnClickListener{
-            var texto = findViewById<TextView>(R.id.text_result)
-            var numeroSorteado = Random().nextInt(11)
-            texto.text = "Número sorteado é $numeroSorteado"
+        btnRodarRoleta.setOnClickListener{
+            val texto = findViewById<TextView>(R.id.text_result)
+            val numeroSorteado = Random().nextInt(2)
+            val renderText = "Número sorteado é $numeroSorteado"
+            texto.text = renderText
         }
     }
 }
